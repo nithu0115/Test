@@ -1,0 +1,6 @@
+#!/bin/bash
+App=`pgrep httpd`
+if [[ -n  $App ]]; then
+    service httpd stop        
+fi
+
